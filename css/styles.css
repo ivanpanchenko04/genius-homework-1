@@ -1,33 +1,33 @@
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v32-latin-regular.woff2") format("woff2");
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/roboto-v32-latin-900.woff2") format("woff2");
+  src: url('../fonts/roboto-v32-latin-900.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: 'Play';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
   font-display: swap;
-  font-family: "Play";
+  font-family: 'Play';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
 }
 
 :root {
@@ -38,15 +38,59 @@
   --beauty-landing-2-s4: #ffd02b;
   --beauty-landing-2-s5: #747272;
   --beauty-landing-2-c6: #011f4a;
-  --font-family: "Roboto", sans-serif;
-  --second-family: "Play", sans-serif;
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Play', sans-serif;
 }
 
 /*Base*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--beauty-landing-2-background);
   color: var(--beauty-landing-2-c1);
   font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 173%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .button {
@@ -54,6 +98,9 @@ body {
   color: var(--beauty-landing-2-background);
   font-weight: 600;
   font-size: 18px;
+  border: none;
+  border-radius: 32px;
+  padding: 16px 32px;
 }
 
 .link {
@@ -75,6 +122,17 @@ body {
 }
 
 /*Header*/
+.header-container {
+  padding: 32px 0;
+}
+
+.header-nav,
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   font-weight: 700;
   font-size: 22px;
@@ -87,10 +145,22 @@ body {
 }
 
 /*Hero*/
+.hero-section {
+  background-image: url(../images/main-image.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.hero-container {
+  margin-left: 205px;
+}
+
 .hero-subtitle {
   font-weight: 400;
   font-size: 18px;
   color: var(--beauty-landing-2-c1);
+  margin-bottom: 16px;
 }
 
 .hero-title {
@@ -98,6 +168,11 @@ body {
   font-weight: 700;
   font-size: 140px;
   line-height: 81%;
+  margin-bottom: 40px;
+}
+
+.hero-order-button {
+  margin-bottom: 14px;
 }
 
 .hero-consultation-text {
@@ -105,6 +180,7 @@ body {
   font-size: 12px;
   line-height: 150%;
   color: var(--beauty-landing-2-c3);
+  margin-bottom: 126px;
 }
 
 /*Transform*/
@@ -112,6 +188,30 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 173%;
+}
+
+.transform-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 176px;
+}
+
+.transform-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.transform-text,
+.transform-images {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
+.transform-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
 }
 
 .beauty-zone {
@@ -124,25 +224,132 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 133%;
+  background-image: linear-gradient(
+    var(--beauty-landing-2-s2),
+    var(--beauty-landing-2-background)
+  );
+  margin-bottom: 96px;
+}
+
+.choose-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  margin-bottom: 48px;
+}
+
+.reasons-list {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
+.reason-card {
+  text-align: center;
+  background: var(--beauty-landing-2-background);
+  border-radius: 32px;
+  padding: 24px 32px;
 }
 
 /*Procedures*/
+.procedures-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 96px;
+}
+
+.procedures-title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.procedures-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.procedures-item {
+  flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedure-card {
+  height: 456px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
+  padding-bottom: 32px;
+}
+
 .procedure-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 118%;
   color: var(--beauty-landing-2-background);
+  text-align: center;
+}
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  fill: var(--beauty-landing-2-c1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--beauty-landing-2-c1);
+  padding: 0;
+  align-self: center;
+}
+
+.carousel-button:hover {
+  background-color: var(--beauty-landing-2-s2);
+  fill: var(--beauty-landing-2-background);
 }
 
 /*Found*/
+.found-title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.map-and-form {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 95px;
+}
+
 .form {
   background-color: var(--beauty-landing-2-c1);
+  text-align: center;
+  padding: 48px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .form-title {
   font-weight: 600;
   font-size: 22px;
   color: var(--beauty-landing-2-background);
+  margin-bottom: 32px;
+}
+
+.form-button {
+  margin-bottom: 8px;
 }
 
 .found-agree-text {
@@ -157,11 +364,32 @@ body {
   background-color: var(--beauty-landing-2-c1);
 }
 
+.footer-container,
+.footer-nav,
+.address {
+  display: flex;
+  gap: 186px;
+}
+
+.footer-container {
+  padding: 56px 100px;
+}
+
 .footer-link,
 .address-link {
   font-weight: 400;
   font-size: 16px;
   color: var(--beauty-landing-2-background);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address-icon {
+  fill: var(--beauty-landing-2-background);
 }
 
 .address-copyright {
