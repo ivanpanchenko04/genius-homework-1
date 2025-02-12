@@ -1,0 +1,52 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(1, 31, 74, 0.4);
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  max-width: 723px;
+  max-height: 681px;
+  background-color: var(--beauty-landing-2-c1);
+  border-radius: 48px;
+  position: relative;
+  padding: 42px 144px;
+  overflow-y: auto;
+  color: var(--beauty-landing-2-background);
+  text-align: center;
+
+  &__btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 22px;
+  }
+}

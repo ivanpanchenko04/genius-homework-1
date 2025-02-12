@@ -1,0 +1,95 @@
+.transform-section {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 173%;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 176px;
+    position: relative;
+
+    &::after {
+      background: url(../images/small-star.png);
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      left: 1150px;
+      bottom: 400px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__text,
+  &__images {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  &__images {
+    position: relative;
+
+    &::before {
+      background: url(../images/large-star.png);
+      background-repeat: no-repeat;
+      width: 64px;
+      height: 64px;
+      bottom: 280px;
+      left: 150px;
+    }
+
+    &::after {
+      background: url(../images/medium-star.png);
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      top: 50px;
+    }
+  }
+
+  &__images::before,
+  &__images::after,
+  &__container::after {
+    position: absolute;
+    content: '';
+  }
+
+  &__images:hover::before,
+  &__images:hover::after,
+  &__container:hover::after {
+    animation: scale 1s linear 0.2s 1 alternate none;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  &__before-procedure-img,
+  &__after-procedure-img {
+    border-radius: 180px;
+  }
+
+  &__after-procedure-img {
+    margin-left: 172px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+  }
+}

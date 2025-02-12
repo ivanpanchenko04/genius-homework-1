@@ -1,0 +1,25 @@
+.procedures-section {
+  &__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 96px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}

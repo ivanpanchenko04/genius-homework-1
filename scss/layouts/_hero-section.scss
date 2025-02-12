@@ -1,0 +1,37 @@
+.hero-section {
+  background-image: url(../images/main-image.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  &__container {
+    margin-left: 205px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--beauty-landing-2-c1);
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 81%;
+    margin-bottom: 40px;
+  }
+
+  &__order-button {
+    margin-bottom: 14px;
+  }
+
+  &__consultation-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: var(--beauty-landing-2-c3);
+    margin-bottom: 126px;
+  }
+}

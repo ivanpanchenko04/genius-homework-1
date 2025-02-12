@@ -1,0 +1,49 @@
+.footer {
+  background-color: var(--beauty-landing-2-c1);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background: url(../images/footer-makeup.png);
+    background-repeat: no-repeat;
+    content: '';
+    width: 248px;
+    height: 152px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__container,
+  &__nav,
+  &__address {
+    display: flex;
+    gap: 186px;
+  }
+
+  &__container {
+    padding: 56px 100px;
+  }
+
+  &__link,
+  &__address-link {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--beauty-landing-2-background);
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__address-icon {
+    fill: var(--beauty-landing-2-background);
+  }
+
+  &__address-copyright {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--beauty-landing-2-s5);
+  }
+}

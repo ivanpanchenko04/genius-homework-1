@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
-            <a href="#" class="styled upper-styled link logo"
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="#" class="styled upper-styled link header__logo"
               >beauty <br />
               zone</a
             >
-            <ul class="header-menu">
-              <li class="header-item">
+            <ul class="header__menu">
+              <li class="header__item">
                 <a class="link" href="#transform-section">Про нас</a>
               </li>
-              <li class="header-item">
+              <li class="header__item">
                 <a class="link" href="#choose-section">Чому ми</a>
               </li>
-              <li class="header-item">
+              <li class="header__item">
                 <a class="link" href="#procedures-section">Наші процедури</a>
               </li>
-              <li class="header-item">
-                <a class="link" href="#found-section">Контакти</a>
+              <li class="header__item">
+                <a class="link" href="#contact-section">Контакти</a>
               </li>
-              <li class="header-item">
+              <li class="header__item">
                 <a class="link" href="#">
                   <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-telephone"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header__item">
                 <a class="link" href="#">
                   <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header__item">
                 <a class="link" href="#">
                   <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram"></use>
@@ -57,25 +57,25 @@
     </header>
     <main>
       <section class="hero-section" id="hero-section">
-        <div class="container hero-container">
-          <h2 class="hero-subtitle">Косметологічна клініка</h2>
-          <h1 class="section-title hero-title styled upper-styled">
+        <div class="container hero-section__container">
+          <h2 class="hero-section__subtitle">Косметологічна клініка</h2>
+          <h1 class="section-title hero-section__title styled upper-styled">
             beauty <br />
             zone
           </h1>
-          <button class="button hero-order-button modal-btn-open">
+          <button class="button hero-section__order-button modal-btn-open">
             Замовити дзвінок
           </button>
-          <p class="hero-consultation-text">
+          <p class="hero-section__consultation-text">
             Запишись та отримай безкоштовну <br />
             консультацію нашого косметолога
           </p>
         </div>
       </section>
       <section class="transform-section" id="transform-section">
-        <div class="container transform-container">
-          <div class="transform-text">
-            <h2 class="transform-title">
+        <div class="container transform-section__container">
+          <div class="transform-section__text">
+            <h2 class="transform-section__title">
               Перевтілюйтесь <br />
               в
               <span class="styled upper-styled">beauty zone!</span>
@@ -91,14 +91,14 @@
               молодість. З нами краса назавжди!
             </p>
           </div>
-          <div class="transform-images">
+          <div class="transform-section__images">
             <img
-              class="before-procedure-img"
+              class="transform-section__before-procedure-img"
               src="./images/before.png"
               alt="Before procedure"
             />
             <img
-              class="after-procedure-img"
+              class="transform-section__after-procedure-img"
               src="./images/after.png"
               alt="After procedure"
             />
@@ -107,12 +107,12 @@
       </section>
       <section class="choose-section" id="choose-section">
         <div class="container">
-          <h2 class="section-title choose-title">
+          <h2 class="section-title choose-section__title">
             Чому люди <br />
             <span class="styled">обирають нас</span>
           </h2>
-          <ul class="reasons-list">
-            <li class="reasons-item">
+          <ul class="choose-section__reasons-list">
+            <li class="choose-section__reasons-item">
               <div class="reason-card">
                 <svg width="48" height="48">
                   <use href="./images/icons.svg#icon-education"></use>
@@ -123,7 +123,7 @@
                 </p>
               </div>
             </li>
-            <li class="reasons-item">
+            <li class="choose-section__reasons-item">
               <div class="reason-card">
                 <svg width="48" height="48">
                   <use href="./images/icons.svg#icon-makeup"></use>
@@ -134,7 +134,7 @@
                 </p>
               </div>
             </li>
-            <li class="reasons-item">
+            <li class="choose-section__reasons-item">
               <div class="reason-card">
                 <svg width="48" height="48">
                   <use href="./images/icons.svg#icon-crown"></use>
@@ -150,33 +150,33 @@
       </section>
       <section class="procedures-section" id="procedures-section">
         <div class="container">
-          <h2 class="section-title procedures-title">
+          <h2 class="section-title procedures-section__title">
             Наші <span class="styled">процедури</span>
           </h2>
-          <div class="procedures-container">
-            <button class="carousel-button" type="button">
+          <div class="procedures-section__container">
+            <button class="carousel-button carousel-button__prev" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="procedures-list">
-              <li class="procedures-item">
+            <ul class="procedures-section__list">
+              <li class="procedures-section__item">
                 <div class="procedure-card">
-                  <p class="procedure-text">Маски для обличчя</p>
+                  <p class="procedure-card__text">Маски для обличчя</p>
                 </div>
               </li>
-              <li class="procedures-item">
+              <li class="procedures-section__item">
                 <div class="procedure-card">
-                  <p class="procedure-text">Ін'єкції для обличчя</p>
+                  <p class="procedure-card__text">Ін'єкції для обличчя</p>
                 </div>
               </li>
-              <li class="procedures-item">
+              <li class="procedures-section__item">
                 <div class="procedure-card">
-                  <p class="procedure-text">Очищення обличчя</p>
+                  <p class="procedure-card__text">Очищення обличчя</p>
                 </div>
               </li>
             </ul>
-            <button class="carousel-button next-carousel-button" type="button">
+            <button class="carousel-button carousel-button__next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -184,21 +184,21 @@
           </div>
         </div>
       </section>
-      <section class="found-section" id="found-section">
-        <div class="container found-container">
-          <h2 class="section-title found-title">
+      <section class="contact-section" id="contact-section">
+        <div class="container contact-section__container">
+          <h2 class="section-title contact-section__title">
             Як нас <span class="styled">знайти</span>
           </h2>
-          <div class="map-and-form">
+          <div class="contact-section__map-and-form">
             <img src="./images/map.png" alt="Map" />
-            <div class="contact-form-container">
+            <div class="contact-section__form-container">
               <p class="modal-subtitle">
                 Запишіться <span class="styled">безкоштовно</span> <br> та отримайте
                 подарунок
               </p>
-              <form class="contact-form" name="contact-form" autocomplete="off">
+              <form class="contact-section__form" name="contact-form" autocomplete="off">
                 <div class="form-field">
-                  <label class="form-lable visually-hidden" for="user-name"
+                  <label class="form-input__lable visually-hidden" for="user-name"
                     >Ім'я</label
                   >
                   <input
@@ -212,7 +212,7 @@
                   />
                 </div>
                 <div class="form-field">
-                  <label class="form-lable visually-hidden" for="user-tel"
+                  <label class="form-input__lable visually-hidden" for="user-tel"
                     >Телефон</label
                   >
                   <input
@@ -226,7 +226,7 @@
                   />
                 </div>
                 <div class="form-field">
-                  <label class="form-lable visually-hidden" for="user-email"
+                  <label class="form-input__lable visually-hidden" for="user-email"
                     >Електронна пошта</label
                   >
                   <input
@@ -238,12 +238,12 @@
                     required
                   />
                 </div>
-                <button class="form-button button" type="submit">
+                <button class="form-field__button button" type="submit">
                   Записатись безкоштовно
                 </button>
                 <p class="form-terms">
                   Натискаючи на кнопку я погоджуюсь
-                  <a class="form-terms-link" href="#"
+                  <a class="form-terms__link" href="#"
                     >з політикою конфіденційності</a
                   >
                 </p>
@@ -254,83 +254,83 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <nav class="footer-nav">
+      <div class="container footer__container">
+        <nav class="footer__nav">
           <div>
             <a class="styled upper-styled link logo" href="#"
               >beauty <br />
               zone</a
             >
           </div>
-          <div class="footer-links">
-            <a class="link footer-link" href="#transform-section">Про нас</a>
-            <a class="link footer-link" href="#choose-section">Чому ми</a>
-            <a class="link footer-link" href="#procedures-section"
+          <div class="footer__links">
+            <a class="link footer__link" href="#transform-section">Про нас</a>
+            <a class="link footer__link" href="#choose-section">Чому ми</a>
+            <a class="link footer__link" href="#procedures-section"
               >Наші процедури</a
             >
-            <a class="link footer-link" href="#found-section">Контакти</a>
+            <a class="link footer__link" href="#found-section">Контакти</a>
           </div>
         </nav>
-        <address class="address">
+        <address class="footer__address">
           <ul>
             <li>
-              <a href="tel:+380960000007" class="link address-link"
+              <a href="tel:+380960000007" class="link footer__address-link"
                 >+ 38 (096) 000 00 07</a
               >
             </li>
             <li>
-              <a href="mailto:beautyzone@gmail.com" class="link address-link"
+              <a href="mailto:beautyzone@gmail.com" class="link footer__address-link"
                 >beautyzone@gmail.com</a
               >
             </li>
             <li>
               <a
                 href="https://g.co/kgs/uxYfJx9"
-                class="link address-link"
+                class="link footer__address-link"
                 target="_blank"
                 >Україна, м. Київ, вул. Тараса Шевченка 5</a
               >
             </li>
             <li>
-              <a class="address-icon" href="#">
+              <a class="footer__address-icon" href="#">
                 <svg width="42" height="42">
                   <use href="./images/icons.svg#icon-telephone"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="address-icon" href="#">
+              <a class="footer__address-icon" href="#">
                 <svg width="42" height="42">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="address-icon" href="#">
+              <a class="footer__address-icon" href="#">
                 <svg width="42" height="42">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <div class="confidential-and-copyright">
-            <a href="#" class="link address-link" target="_blank"
+          <div class="footer__confidential-and-copyright">
+            <a href="#" class="link footer__address-link" target="_blank"
               >Політика конфіденційності</a
             >
-            <p class="address-copyright">&copy; 2022 Дані захищені</p>
+            <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
           </div>
         </address>
       </div>
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
-        <h2 class="modal-title">Замовити дзвінок</h2>
-        <p class="modal-subtitle">
+        <button class="modal-btn-close modal__btn-close" type="button">Close</button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__subtitle">
           Запишіться <span class="styled">безкоштовно</span> та отримайте
           подарунок
         </p>
-        <form name="modal-form" autocomplete="off">
+        <form name="modal__form" autocomplete="off">
           <div class="form-field">
             <label class="form-lable visually-hidden" for="user-name"
               >Ім'я</label

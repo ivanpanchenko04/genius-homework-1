@@ -1,0 +1,27 @@
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--beauty-landing-2-s5);
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 13px;
+  line-height: 1.17;
+  transition: background-color 0.2s, outline 0.2s;
+
+  &__lable {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  &:focus {
+    background-color: var(--beauty-landing-2-s5);
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--beauty-landing-2-background);
+    font-size: 13px;
+    line-height: 1.17;
+  }
+}

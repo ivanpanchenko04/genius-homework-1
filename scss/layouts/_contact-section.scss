@@ -1,0 +1,23 @@
+.contact-section {
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__map-and-form {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 95px;
+  }
+
+  &__form-container {
+    background-color: var(--beauty-landing-2-c1);
+    padding: 48px 56px;
+    border-radius: 32px;
+    color: var(--beauty-landing-2-background);
+    text-align: center;
+  }
+}
