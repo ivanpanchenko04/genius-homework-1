@@ -1,11 +1,24 @@
 .hero-section {
-  background-image: url(../images/main-image.png);
+  position: relative;
+  padding-top: 132px;
+  background-image: linear-gradient(
+      94deg,
+      var(--beauty-landing-2-background) 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(../images/main-image.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  overflow: hidden;
+  margin-bottom: 40px;
 
   &__container {
     margin-left: 205px;
+    position: relative;
+    z-index: 2;
   }
 
   &__subtitle {
@@ -33,5 +46,32 @@
     line-height: 150%;
     color: var(--beauty-landing-2-c3);
     margin-bottom: 126px;
+  }
+
+  &__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    z-index: 1;
+    clip-path: polygon(
+      50% 60%,
+      55% 60%,
+      58% 63%,
+      60% 65%,
+      62% 67%,
+      65% 70%,
+      70% 70%,
+      80% 70%,
+      82% 68%,
+      85% 65%,
+      80% 70%,
+      90% 60%,
+      100% 30%,
+      100% 100%,
+      0% 100%
+    );
   }
 }

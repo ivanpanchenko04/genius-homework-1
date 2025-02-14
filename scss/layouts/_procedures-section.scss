@@ -1,11 +1,4 @@
 .procedures-section {
-  &__container {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    margin-bottom: 96px;
-  }
-
   &__title {
     font-weight: 700;
     font-size: 64px;
@@ -13,13 +6,19 @@
     margin-bottom: 48px;
   }
 
-  &__list {
+  &__slider {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    gap: 32px;
+    justify-content: center;
+    
   }
 
-  &__item {
-    flex-basis: calc((100% - 32px) / 3);
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__container {
+    overflow: hidden;
+    margin-bottom: 96px;
   }
 }

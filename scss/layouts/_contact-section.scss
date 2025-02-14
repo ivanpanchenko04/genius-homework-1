@@ -13,6 +13,14 @@
     margin-bottom: 95px;
   }
 
+  &__map {
+    flex-shrink: 0;
+    margin: 0 -24px;
+    height: 481px;
+    border-radius: 32px;
+    border: none;
+  }
+
   &__form-container {
     background-color: var(--beauty-landing-2-c1);
     padding: 48px 56px;
