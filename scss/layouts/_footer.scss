@@ -37,6 +37,16 @@
     gap: 16px;
   }
 
+  &__address-contact {
+    margin-bottom: 16px;
+  }
+
+  &__address-social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
   &__address-icon {
     fill: var(--beauty-landing-2-background);
   }

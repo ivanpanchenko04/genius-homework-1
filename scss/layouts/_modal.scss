@@ -10,6 +10,7 @@
   justify-content: center;
   background: rgba(1, 31, 74, 0.4);
   transition: opacity 0.3s, visibility 0.3s;
+  z-index: 2;
 
   &.is-hidden {
     opacity: 0;
@@ -35,6 +36,7 @@
     position: absolute;
     top: 40px;
     right: 40px;
+    cursor: pointer;
   }
 
   &__title {
