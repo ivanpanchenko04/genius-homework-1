@@ -3,6 +3,14 @@
   font-size: 18px;
   line-height: 133%;
   margin-bottom: 96px;
+  position: relative;
+
+  &__wave {
+    position: absolute;
+    top: -250px;
+    width: 100%;
+    z-index: -1;
+  }
 
   &__title {
     text-align: center;
