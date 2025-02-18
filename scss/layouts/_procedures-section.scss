@@ -1,16 +1,21 @@
 .procedures-section {
   &__title {
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 32px;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 48px;
+    }
   }
 
   &__slider {
     display: flex;
     gap: 32px;
     justify-content: center;
-    
   }
 
   &__list {

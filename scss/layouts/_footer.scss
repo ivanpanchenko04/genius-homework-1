@@ -1,27 +1,86 @@
 .footer {
   background-color: var(--beauty-landing-2-c1);
+  background-image: url('../images/background-lines.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url(../images/background-lines@2x.png);
+  }
+
+  &__logo {
+    margin-bottom: 42px;
+    text-align: start;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
+  }
+
   &::after {
-    position: absolute;
-    background: url(../images/footer-makeup.png);
-    background-repeat: no-repeat;
-    content: '';
-    width: 248px;
-    height: 152px;
-    right: 0;
-    bottom: 0;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      position: absolute;
+      background: url(../images/footer-makeup.png);
+      background-repeat: no-repeat;
+      content: '';
+      width: 248px;
+      height: 152px;
+      right: 0;
+      bottom: 0;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/footer-makeup@2x.png);
+      }
+    }
   }
 
   &__container,
   &__nav,
   &__address {
     display: flex;
-    gap: 186px;
+    text-align: center;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 186px;
+      text-align: start;
+      align-items: start;
+    }
   }
 
   &__container {
     padding: 56px 100px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__nav,
+  &__address {
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 16px;
+    }
   }
 
   &__link,
@@ -39,12 +98,22 @@
 
   &__address-contact {
     margin-bottom: 16px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
   }
 
   &__address-social {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
   }
 
   &__address-icon {

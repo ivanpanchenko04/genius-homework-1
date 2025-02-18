@@ -58,6 +58,63 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <svg
+              class="mobile-menu__btn-close menu-btn-close"
+              width="24"
+              height="24"
+            >
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+            <nav class="mobile-menu__nav">
+              <a href="#" class="styled upper-styled logo mobile-menu__logo"
+                >beauty <br />
+                zone</a
+              >
+              <ul class="mobile-menu__menu-links">
+                <li class="mobile-menu__item">
+                  <a class="link" href="#transform-section">Про нас</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link" href="#choose-section">Чому ми</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link" href="#procedures-section">Наші процедури</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link" href="#contact-section">Контакти</a>
+                </li>
+              </ul>
+              <ul class="mobile-menu__menu-icons">
+                <li class="mobile-menu__item">
+                  <a class="link" href="#">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link" href="#">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link" href="#">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -66,8 +123,7 @@
         <div class="container hero-section__container">
           <h2 class="hero-section__subtitle">Косметологічна клініка</h2>
           <h1 class="section-title hero-section__title styled upper-styled">
-            beauty <br />
-            zone
+            beauty zone
           </h1>
           <button class="button hero-section__order-button modal-btn-open">
             Замовити дзвінок
@@ -102,11 +158,13 @@
             <img
               class="transform-section__before-procedure-img"
               src="./images/before.png"
+              srcset="./images/before.png 1x, ./images/before@2x.png 2x"
               alt="Before procedure"
             />
             <img
               class="transform-section__after-procedure-img"
               src="./images/after.png"
+              srcset="./images/after.png 1x, ./images/after@2x.png 2x"
               alt="After procedure"
             />
           </div>
@@ -203,6 +261,7 @@
                     <img
                       class="procedure-card__image"
                       src="./images/procedure1.png"
+                      srcset="./images/procedure1.png 1x, ./images/procedure1@2x.png 2x"
                       alt="Face masks"
                     />
                     <p class="procedure-card__text">Маски для обличчя</p>
@@ -213,6 +272,7 @@
                     <img
                       class="procedure-card__image"
                       src="./images/procedure2.png"
+                      srcset="./images/procedure2.png 1x, ./images/procedure2@2x.png 2x"
                       alt="Face injections"
                     />
                     <p class="procedure-card__text">Ін'єкції для обличчя</p>
@@ -223,6 +283,7 @@
                     <img
                       class="procedure-card__image"
                       src="./images/procedure3.png"
+                      srcset="./images/procedure3.png 1x, ./images/procedure3@2x.png 2x"
                       alt="Face cleaning"
                     />
                     <p class="procedure-card__text">Очищення обличчя</p>
@@ -233,6 +294,7 @@
                     <img
                       class="procedure-card__image"
                       src="./images/procedure1.png"
+                      srcset="./images/procedure1.png 1x, ./images/procedure1@2x.png 2x"
                       alt="Face masks"
                     />
                     <p class="procedure-card__text">Маски для обличчя</p>
@@ -243,6 +305,7 @@
                     <img
                       class="procedure-card__image"
                       src="./images/procedure2.png"
+                      srcset="./images/procedure2.png 1x, ./images/procedure2@2x.png 2x"
                       alt="Face injections"
                     />
                     <p class="procedure-card__text">Ін'єкції для обличчя</p>
@@ -253,6 +316,7 @@
                     <img
                       class="procedure-card__image"
                       src="./images/procedure3.png"
+                      srcset="./images/procedure3.png 1x, ./images/procedure3@2x.png 2x"
                       alt="Face cleaning"
                     />
                     <p class="procedure-card__text">Очищення обличчя</p>
@@ -281,10 +345,8 @@
           </h2>
           <div class="contact-section__map-and-form">
             <iframe
-              class="contact-section_map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.0005169814954!2d32.0150495!3d49.465604899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14ce39a9d94ef%3A0x315bb856c15e9268!2z0KfQtdGA0LrQsNGB0YzQutCwINC-0LHQu9Cw0YHQvdCwINC70ZbQutCw0YDQvdGP!5e0!3m2!1suk!2sua!4v1739451147257!5m2!1suk!2sua"
-              width="605"
-              height="481"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -365,7 +427,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <nav class="footer__nav">
-          <div>
+          <div class="footer__logo">
             <a class="styled upper-styled logo" href="#"
               >beauty <br />
               zone</a
@@ -494,6 +556,7 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/procedures-slider.js"></script>
     <script src="./js/modal.js"></script>
   </body>

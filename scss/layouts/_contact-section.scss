@@ -1,32 +1,67 @@
 .contact-section {
+  margin-bottom: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-bottom: 96px;
+  }
+
   &__title {
-    font-weight: 700;
-    font-size: 64px;
+    font-weight: 500;
+    font-size: 32px;
     text-align: center;
-    margin-bottom: 48px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-weight: 700;
+      font-size: 64px;
+    }
   }
 
   &__map-and-form {
     display: flex;
-    gap: 32px;
+    flex-direction: column-reverse;
+    gap: 24px;
     justify-content: center;
-    margin-bottom: 95px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 32px;
+      flex-direction: row;
+    }
   }
 
   &__map {
     flex-shrink: 0;
     margin: 0 -24px;
-    height: 481px;
     border-radius: 32px;
     border: none;
+    min-width: 360px;
+    height: 232px;
+
+    @media screen and (min-width: $bp-desktop) {
+      min-width: 605px;
+      height: 481px;
+    }
   }
 
   &__form-container {
     background-color: var(--beauty-landing-2-c1);
-    padding: 48px 56px;
+    background-image: url('../images/background-lines.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 42px 24px;
     border-radius: 32px;
     color: var(--beauty-landing-2-background);
     text-align: center;
     height: 481px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../images/background-lines@2x.png);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 48px 56px;
+    }
   }
 }

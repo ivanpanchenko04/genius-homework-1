@@ -1,0 +1,42 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px 20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--beauty-landing-2-background);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    fill: var(--beauty-landing-2-c1);
+    width: 24px;
+    height: 24px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    font-size: 14px;
+  }
+
+  &__menu-links {
+    margin-bottom: 16px;
+  }
+
+  &__menu-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+}

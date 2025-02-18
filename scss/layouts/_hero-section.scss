@@ -15,37 +15,81 @@
   overflow: hidden;
   margin-bottom: 40px;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+      94deg,
+      var(--beauty-landing-2-background) 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(../images/main-image@2x.png);
+    }
+
   &__container {
-    margin-left: 205px;
     position: relative;
-    z-index: 2;
+    
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 530px;
+      margin-left: 205px;
+      text-align: start;
+    }
   }
 
   &__subtitle {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
     color: var(--beauty-landing-2-c1);
-    margin-bottom: 16px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
   }
 
   &__title {
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 140px;
-    line-height: 81%;
-    margin-bottom: 40px;
+    font-size: 54px;
+    line-height: 85%;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 140px;
+      line-height: 81%;
+      margin-bottom: 40px;
+    }
   }
 
   &__order-button {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 14px;
+    }
   }
 
   &__consultation-text {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
     color: var(--beauty-landing-2-c3);
-    margin-bottom: 126px;
+    margin-bottom: 56px;
+    font-size: 11px;
+    line-height: 164%;
+    text-align: center;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 12px;
+      line-height: 150%;
+      margin-bottom: 126px;
+      display: flex;
+      align-items: start;
+    }
   }
 
   &__wave {
@@ -57,21 +101,34 @@
     background: #fff;
     z-index: 1;
     clip-path: polygon(
-      50% 60%,
-      55% 60%,
-      58% 63%,
-      60% 65%,
-      62% 67%,
-      65% 70%,
-      70% 70%,
-      80% 70%,
-      82% 68%,
-      85% 65%,
-      80% 70%,
-      90% 60%,
-      100% 30%,
+      40% 98%,
+      45% 95%,
+      50% 92%,
+      70% 95%,
+      80% 98%,
+      90% 100%,
       100% 100%,
       0% 100%
     );
+
+    @media screen and (min-width: $bp-desktop) {
+      clip-path: polygon(
+        50% 60%,
+        55% 60%,
+        58% 63%,
+        60% 65%,
+        62% 67%,
+        65% 70%,
+        70% 70%,
+        80% 70%,
+        82% 68%,
+        85% 65%,
+        80% 70%,
+        90% 60%,
+        100% 30%,
+        100% 100%,
+        0% 100%
+      );
+    }
   }
 }
