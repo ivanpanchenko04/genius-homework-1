@@ -6,12 +6,6 @@
   background-position: center;
   position: relative;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background: url(../images/background-lines@2x.png);
-  }
-
   &__logo {
     margin-bottom: 42px;
     text-align: start;
